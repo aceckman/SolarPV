@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Solar PV</title>
+
+	<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+    <link rel="stylesheet" href="{% static 'solar/style.css' %}">
+
+</head>
+
+<body>
+
+	<div class="header">
+
+	<h1><img src="CREATE.jpg" class="img-fluid" alt="Event" style="width:500px;height:150px;"><br>
+
+	Research and Development</h1>
+	
+	</div>
+
+<nav class="w3-bar w3-black">
+	<ul>
+  <li><a href="Project1.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Rackers & Trackers</a>
+    <div class="dropdown-content">
+      <a href="#">Manufacturers</a>
+      <a href="#">Inventory</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PV Module</a>
+    <div class="dropdown-content">
+      <a href="#">Testing & Certification</a>
+      <a href="#">PV Rating</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PV System</a>
+    <div class="dropdown-content">
+      <a href="#">Monitoring & Inspection</a>
+      <a href="#">Performance Analysis</a>
+      <a href="#">Compare System</a>
+      <a href="#">Certification</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Data Analytics</a>
+    <div class="dropdown-content">
+      <a href="#">Module Lifetime Prediction</a>
+      <a href="#">Energy Prediction</a>
+    </div>
+  </li>
+  <li><a href="#home">About Us</a></li>
+  <li><a href="#home">Contact Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mission Statement</a>
+    <div class="dropdown-content">
+      <a href="#">Our Mission</a>
+      <a href="#">Company History</a>
+      <li><a href="{% url 'Login' %}">Login/Sign Up</a></li>
+    </div>
+  </li>
+</ul>
+
+ 	</nav>
+
+	<div class="container features">
+
+    <div class="row">
+
+    <div class="column">
+
+    	<h3 class="feature-title"><b>Available Information</b></h3>
+
+    		<p style="border:3px; border-style:solid; border-color:#484848; padding: 1em; font-family: Georgia, Serif">
+
+<b>PV Module</b> <BR>
+‣ Testing & Certification <BR>
+‣ PV Rating <BR>
+
+<BR>
+
+<b>PV System Performance</b> <BR>
+‣ Monitoring & Inspection <BR>
+‣ Performance Analysis <BR>
+‣ Compare system <BR>
+‣ Certification <BR>
+
+<BR>
+
+<b>Data Analytics</b> <BR>
+‣ Module lifetime prediction <BR>
+‣ Energy Prediction<BR>
+
+<BR>
+
+<b>Cybersecurity and Smart Grid Technologies</b><BR>
+
+<BR> 
+
+<b>Solar PV University</b><BR>
+
+<br>
+
+<iframe width="270" height="200" src="https://www.youtube.com/embed/NLO9w963Aj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</p>
+
+	</div>
+
+	<div class="column"> 
+
+		<h3 class="feature-title"><b>Featured Content</b></h3>
+
+			<p style="border:3px; border-style:solid; border-color:#484848; padding: 1em; font-family: Georgia, Serif">
+
+<br>
+<img src="solar.jpg" class="img-fluid" alt="Event" style="width:270px;height:195px;">
+<br>
+
+<b>ON THE LINE</b>- <i>Solar PV</i> has a week long event occurring during the third weekend of August that will encourage others to come and learn more about the long term affects of the use of solar energy. <br>
+
+<br>
+
+<u>FIND US ON SOCIAL MEDIA!</u>
+<b>FACEBOOK</b>: Facebook.com/SolarPV
+
+<b>INSTAGRAM</b>: Instagram.com/SolarPV
+
+<b>TWITTER</b>: Twitter.com/SolarPV 
+
+<br><br>
+
+<img src="logo.jpg" class="img-fluid" alt="Logo" style="width:270px;height:70px;">
+</p>
+
+	</div>
+
+	<div class="column"> 
+
+		<h3 class="feature-title"><b>News & Events</b></h3>
+    
+			<p style="border:3px; border-style:solid; border-color:#484848; padding: 1em; font-family: Georgia, Serif">
+
+<b>Support for 2020’s Premier Energy Event</b> <br>
+May 29, 2020 <br>
+Alexandria, VA - As announced recently, Solar PV will be coming together with other solar teams to support our next big event, Smart Energy Week! This event takes place during the second week of September, and this year we are in for some awesome news and new releases!<br>
+
+<br>
+
+<b>Hydrogen Safety!</b><br>
+May 06, 2020 <br>
+Alexandria, VA - Solar PV and the Center of Hydrogen Safety will be working together this upcoming fall during this year's Smart Energy Event! This will enable all of our companies to come together and present the best possible resources and education on our content! <br>
+
+<div id="drop-area">
+  <form class="my-form">
+    <p><b>Join the Team! Apply Below:<br>
+    <a class="button1" href="{% url 'Registration' %}">Apply Here or Submit Below</a> </b></p>
+    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+    <label class="button" for="fileElem">Select/Drag Your File</label>
+  </form>
+  <div id="gallery"></div>
+  <progress id="progress-bar" max=100 value=0></progress>
+</div>
+
+</p>
+
+	</div>
+  </div>
+  </div>
+
+  <hr style="width:100%;text-align:left;margin-left:0">
+
+  <footer>
+	<p>SolarPV<BR>
+		282 Milton Way
+		Denver, CO 29329 <br>
+
+		Front Desk: (717)-438-3932
+		Fax Machine:(448)-374-2232 <br>
+
+		Email: moreinfo@solarpv.org <br>
+
+		URL: http://www.solarpv.org <br>
+
+		@ 2020 All Rights Reserved</p>
+
+		</footer>
+
+<script> 
+
+let filesDone = 0
+let filesToDo = 0
+let progressBar = document.getElementById('progress-bar')
+
+let dropArea = document.getElementById('drop-area')
+;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, preventDefaults, false)
+})
+
+function preventDefaults (e) {
+  e.preventDefault()
+  e.stopPropagation()
+}
+
+;['dragenter', 'dragover'].forEach(eventName => {
+  dropArea.addEventListener(eventName, highlight, false)
+})
+
+;['dragleave', 'drop'].forEach(eventName => {
+  dropArea.addEventListener(eventName, unhighlight, false)
+})
+
+function highlight(e) {
+  dropArea.classList.add('highlight')
+}
+
+function unhighlight(e) {
+  dropArea.classList.remove('highlight')
+}
+
+dropArea.addEventListener('drop', handleDrop, false)
+
+function handleDrop(e) {
+  let dt = e.dataTransfer
+  let files = dt.files
+
+  handleFiles(files)
+}
+
+function handleFiles(files) {
+  ([...files]).forEach(uploadFile)
+}
+
+function uploadFile(file) {
+  let url = 'YOUR URL HERE'
+  let formData = new FormData()
+
+  formData.append('file', file)
+
+  fetch(url, {
+    method: 'POST',
+    body: formData
+  })
+  .then(() => { /* Done. Inform the user */ })
+  .catch(() => { /* Error. Inform the user */ })
+}
+
+function uploadFile(file) {
+  var url = 'YOUR URL HERE'
+  var xhr = new XMLHttpRequest()
+  var formData = new FormData()
+  xhr.open('POST', url, true)
+
+  xhr.addEventListener('readystatechange', function(e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Done. Inform the user
+    }
+    else if (xhr.readyState == 4 && xhr.status != 200) {
+      // Error. Inform the user
+    }
+  })
+
+  formData.append('file', file)
+  xhr.send(formData)
+}
+
+function previewFile(file) {
+  let reader = new FileReader()
+  reader.readAsDataURL(file)
+  reader.onloadend = function() {
+    let img = document.createElement('img')
+    img.src = reader.result
+    document.getElementById('gallery').appendChild(img)
+  }
+}
+
+function handleFiles(files) {
+  files = [...files]
+  files.forEach(uploadFile)
+  files.forEach(previewFile)
+}
+
+function initializeProgress(numfiles) {
+  progressBar.value = 0
+  filesDone = 0
+  filesToDo = numfiles
+}
+
+function progressDone() {
+  filesDone++
+  progressBar.value = filesDone / filesToDo * 100
+}
+
+function handleFiles(files) {
+  files = [...files]
+  initializeProgress(files.length) // <- Add this line
+  files.forEach(uploadFile)
+  files.forEach(previewFile)
+}
+
+function uploadFile(file) {
+  let url = 'YOUR URL HERE'
+  let formData = new FormData()
+
+  formData.append('file', file)
+
+  fetch(url, {
+    method: 'POST',
+    body: formData
+  })
+  .then(progressDone) // <- Add `progressDone` call here
+  .catch(() => { /* Error. Inform the user */ })
+}
+
+let uploadProgress = []
+
+function initializeProgress(numFiles) {
+  progressBar.value = 0
+  uploadProgress = []
+
+  for(let i = numFiles; i > 0; i--) {
+    uploadProgress.push(0)
+  }
+}
+
+function updateProgress(fileNumber, percent) {
+  uploadProgress[fileNumber] = percent
+  let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
+  progressBar.value = total
+}
+
+function uploadFile(file, i) { // <- Add `i` parameter
+  var url = 'YOUR URL HERE'
+  var xhr = new XMLHttpRequest()
+  var formData = new FormData()
+  xhr.open('POST', url, true)
+
+  // Add following event listener
+  xhr.upload.addEventListener("progress", function(e) {
+    updateProgress(i, (e.loaded * 100.0 / e.total) || 100)
+  })
+
+  xhr.addEventListener('readystatechange', function(e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Done. Inform the user
+    }
+    else if (xhr.readyState == 4 && xhr.status != 200) {
+      // Error. Inform the user
+    }
+  })
+
+  formData.append('file', file)
+  xhr.send(formData)
+}
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+</body>
+</html>

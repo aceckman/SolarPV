@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Solar PV</title>
+
+  <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+    <link rel="stylesheet" href="{% static 'solar/style.css' %}">
+
+</head>
+
+<body>
+
+  <div class="header">
+
+  <h1><img src="CREATE.jpg" class="img-fluid" alt="Event" style="width:500px;height:150px;"><br>
+
+	Research and Development</h1>
+	
+	</div>
+
+<nav class="w3-bar w3-black">
+	<ul>
+  <li><a href="Project1.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Rackers & Trackers</a>
+    <div class="dropdown-content">
+      <a href="#">Manufacturers</a>
+      <a href="#">Inventory</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PV Module</a>
+    <div class="dropdown-content">
+      <a href="#">Testing & Certification</a>
+      <a href="#">PV Rating</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PV System</a>
+    <div class="dropdown-content">
+      <a href="#">Monitoring & Inspection</a>
+      <a href="#">Performance Analysis</a>
+      <a href="#">Compare System</a>
+      <a href="#">Certification</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Data Analytics</a>
+    <div class="dropdown-content">
+      <a href="#">Module Lifetime Prediction</a>
+      <a href="#">Energy Prediction</a>
+    </div>
+  </li>
+  <li><a href="#home">About Us</a></li>
+  <li><a href="#home">Contact Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mission Statement</a>
+    <div class="dropdown-content">
+      <a href="#">Our Mission</a>
+      <a href="#">Company History</a>
+      <li><a href="Login.html">Login/Sign Up</a></li>
+    </div>
+  </li>
+</ul>
+
+  </nav>
+
+  <h4 class="portalpage"><b>Welcome back (*UserID here*)!</b>
+
+  <p>Please enter the required information in the forms below to start searching for your product/client's information.</p>
+
+  <div class="row">
+  <div class="column">
+    <h2>Client Information:</h2>
+
+    <form class="client">
+        ClientID (Required, 6 digits):<br>
+        <input type="text" name="ClientID" size="35"><br>
+        Client Code (Optional):<br>
+        <input type="text" name="ClientCode" size="35"><br>
+        Client Name (Optional):<br>
+        <input type="text" name="ClientName" size="35"><br>
+        Client Type (Optional):<br>
+        <input type="text" name="ClientType" size="35"><br>
+    </form><br>
+
+    <h2>Test Standard:</h2>
+
+    <form class="teststandard">
+      StandardID (Required, 6 digits):<br>
+      <input type="text" name="StandardID" size="35"><br>
+      Standard Name (Optional):<br>
+      <input type="text" name="StandardName" size="35"><br>
+      Description:<br>
+      <input type="text" name="Description" size="35"><br>
+      Publish Date:<br>
+      <input type="text" name="PublishDate" size="35"><br>
+      </form><br>
+
+    <h2>Certificate:</h2>
+
+    <form class="certificate">
+      CertificateID (Required, 6 digits):<br>
+      <input type="text" name="CertificateID" size="35"><br>
+      Certificate Number:<br>
+      <input type="text" name="CertficateNumber" size="35"><br>
+      Location:<br>
+      <input type="text" name="Location" size="35"><br>
+      Report Number:<br>
+      <input type="text" name="ReportNumber" size="35"><br>
+      ContactID (Required):<br>
+      <input type="text" name="ContactID" size="35"><br>
+      Test Standard:<br>
+      <input type="text" name="TestStandard" size="35"><br>
+      Product:<br>
+      <input type="text" name="Product" size="35"><br>
+      Certificate Issue Date:<br>
+      <input type="text" name="IssueDate" size="35"><br>
+      </form><br>
+
+  </div>
+
+  <div class="column">
+    <h2>Location:</h2>
+    
+    <form class="location">
+        LocationID (Required, 6 digits):<br>
+        <input type="text" name="LocationID" size="35"><br>
+        ClientID (Required, 6 digits):<br>
+        <input type="text" name="ClientID" size="35"><br>
+        Address 1:<br>
+        <input type="text" name="Address1" size="35"><br>
+        Address 2 (Optional):<br>
+        <input type="text" name="Address2" size="35"><br>
+        City:<br>
+        <input type="text" name="City" size="35"><br>
+        State:<br>
+        <input type="text" name="State" size="35"><br>
+        Postal Code:<br>
+        <input type="text" name="PostalCode" size="35"><br>
+        Country (Optional):<br>
+        <input type="text" name="Country" size="35"><br>
+        Phone Number (Optional):<br>
+        <input type="text" name="PhoneNumber" size="35"><br>
+        Fax Number (Optional):<br>
+        <input type="text" name="FaxNumber" size="35"><br>
+    </form><br>
+
+  </div>
+
+  <div class="column">
+    <h2>Product:</h2>
+    
+    <form class="product">
+        Model Number (Required):<br>
+        <input type="text" name="modelnumber" size="35"><br>
+        Name (Optional):<br>
+        <input type="text" name="name" size="35"><br>
+        Cell Technology:<br>
+        <input type="text" name="celltechnology" size="35"><br>
+        Cell Manufacturer:<br>
+        <input type="text" name="cellmanufacturer" size="35"><br>
+        Number of Cells:<br>
+        <input type="text" name="numberofcells" size="35"><br>
+        Number of Cells in Series:<br>
+        <input type="text" name="cellseries" size="35"><br>
+        Number of Series Strings:<br>
+        <input type="text" name="cellstrings" size="35"><br>
+        Number of Diodes:<br>
+        <input type="text" name="diodes" size="35"><br>
+        Product Length:<br>
+        <input type="text" name="length" size="35"><br>
+        Product Width:<br>
+        <input type="text" name="width" size="35"><br>
+        Product Weight:<br>
+        <input type="text" name="weight" size="35"><br>
+        Substrate Type:<br>
+        <input type="text" name="substratetype" size="35"><br>
+        </form><br>
+        <a class="button1" href="project1.html">SEARCH FOR RESULTS</a>
+</div>
+</div>
+
+<hr style="width:100%;text-align:left;margin-left:0">
+
+  <footer>
+  <p>SolarPV<BR>
+    282 Milton Way
+    Denver, CO 29329 <br>
+
+    Front Desk: (717)-438-3932
+    Fax Machine:(448)-374-2232 <br>
+
+    Email: moreinfo@solarpv.org <br>
+
+    URL: http://www.solarpv.org <br>
+
+    @ 2020 All Rights Reserved</p>
+
+    </footer>
