@@ -1,13 +1,17 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Product,Certificate,Service
+from .serializers import ProductSerializer,CertificateSerializer,ServiceSerializer
 
-def Project1(request):
-	return render(request, 'solar/Project1.html')
+class ProductView(viewsets.ModelViewSet):
+	queryset = Product.objects.all()
+	serializer_class = ProductSerializer
 
-def Registration(request):
-	return render(request, 'solar/Registration.html')
+class CertificateView(viewsets.ModelViewSet):
+	queryset = Certificate.objects.all()
+	serializer_class = CertificateSerializer
 
-def Login(request):
-	return render(request, 'solar/Login.html')
-
-def Dashboard(request):
-	return render(request, 'solar/Dashboard.html')
+class ServiceView(viewsets.ModelViewSet):
+	queryset = Service.objects.all()
+	serializer_class = ServiceSerializer
+# Create your views here.
