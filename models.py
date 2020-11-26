@@ -55,7 +55,7 @@ class Service(models.Model):
 	description = models.TextField()
 	FIrequirement = models.CharField(max_length=20)
 	FIfrequency = models.CharField(max_length=15)
-	teststand_ID = models.ManyToManyField(TestStandard)
+	teststand_ID = models.CharField(max_length=20)
 
 	def __str__(self):
 		return self.service_ID
@@ -109,11 +109,11 @@ class ProductFactory(models.Model):
 class Certificate(models.Model):
 	certificate_ID = models.CharField(max_length=20)
 	certificate_num = models.CharField(max_length=20)
-	location_ID = models.ManyToManyField(Location)
+	location_ID = models.CharField(max_length=20)
 	reportnum = models.CharField(max_length=20)
-	user_ID = models.ManyToManyField(User)
-	teststand_ID = models.ManyToManyField(TestStandard)
-	product_ID = models.ManyToManyField(Product)
+	user_ID = models.CharField(max_length=20)
+	teststand_ID = models.CharField(max_length=20)
+	product_ID = models.CharField(max_length=20)
 	certissue_date = models.DateField()
 
 	def __str__(self):
